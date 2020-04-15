@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="icon" type="image/png" href="#{request.contextPath}/assets/images/online-tv-logo.png" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<title>Series</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+	<link rel="stylesheet" href="#{request.contextPath}/assets/css/index.css"/>
+</h:head>
+<h:body>
+	<nav class="cyan darken-3" style="padding:0px 10px;">
+    	<div class="nav-wrapper">
+      		<a href="#{request.contextPath}" class="brand-logo"><img class="logo" src="#{request.contextPath}/assets/images/online-tv-logo.png" alt="TV OnLine"/></a>
+      		<a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      		<ul class="right hide-on-med-and-down">
+        		<li><a href="#{request.contextPath}/pages/movies.xhtml"><i class="material-icons left">movie</i>Movies</a></li>
+        		<li><a href="#{request.contextPath}/pages/series.xhtml"><i class="material-icons left">weekend</i>Series</a></li>
+        		<li><a href="#{request.contextPath}/pages/liveTv.xhtml"><i class="material-icons left">tv</i>Live TV</a></li>
+      		</ul>
+    	</div>
+    </nav>
+	<ul class="sidenav cyan darken-3" id="mobile-nav">
+		<li>
+			<div class="user-view">
+		      <div class="background">
+		      	<img src="#{request.contextPath}/assets/images/office.jpg"/>
+		      </div>
+		      <a><img class="circle" src="#{request.contextPath}/assets/images/online-tv-logo.png"/></a>
+		      <a><span class="white-text name">KOMP</span></a>
+		      <a><span class="white-text email">The best app for watch TV</span></a>
+		    </div>
+	    </li>
+		<li><a class="white-text" href="#{request.contextPath}/pages/movies.xhtml"><i class="white-text material-icons left">movie</i>Movies</a></li>
+		<li><a class="white-text" href="#{request.contextPath}/pages/series.xhtml"><i class="white-text material-icons left">weekend</i>Series</a></li>
+		<li><a class="white-text" href="#{request.contextPath}/pages/liveTv.xhtml"><i class="white-text material-icons left">tv</i>Live TV</a></li>
+	</ul>
+	<main>
+		<h5 class="header center">The best series</h5>
+		<div class="container services">
+			
+		</div>
+	</main>
+	<footer class="page-footer cyan darken-3" style="padding:0px 10px;">
+		<div class="footer-copyright">
+			&copy;
+			<script>
+                   document.write(new Date().getFullYear())
+               </script>
+			Copyright, All rights reserved.
+			<a class="grey-text text-lighten-4 right" href="#!">Made by KOMP</a>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.sidenav').sidenav();
+		});
+	</script>
+</h:body>
+</html>

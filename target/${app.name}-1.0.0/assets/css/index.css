@@ -1,0 +1,22 @@
+body {
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #e0e0e0;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.logo {
+    width: 40%;
+}
+
+.imgServices {
+	height: 200px;
+}
+
+.videosSize {
+	width: 500px;
+}
